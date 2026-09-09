@@ -748,40 +748,95 @@
 
       </div>
 
-      <!-- コミュニティ参加で手に入るパッケージ一覧 -->
-      <div class="bg-slate-800/80 rounded-3xl p-8 sm:p-10 border border-slate-700">
-        <h3 class="text-xl sm:text-2xl font-heading font-bold text-center mb-6 text-amber-400">
-          「福祉・教育AIまなびば」参加パッケージ
-        </h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
-          <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-700/80 flex items-start gap-3">
-            <i class="fa-solid fa-check text-brand-orange mt-1"></i>
-            <div>
-              <span class="font-bold block text-white">質問し放題専用LINE</span>
-              <span class="text-xs text-slate-400">日々のつまずきをいつでも即解消</span>
+      <!-- コミュニティ参加で手に入るパッケージ＆参加費用案内 -->
+      <div class="bg-gradient-to-b from-slate-800/90 to-slate-900/95 rounded-3xl p-8 sm:p-12 border border-slate-700/80 shadow-2xl relative overflow-hidden">
+        
+        <!-- 背景のソフトな光彩 -->
+        <div class="absolute -top-24 -right-24 w-72 h-72 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10">
+          <div class="text-center max-w-2xl mx-auto mb-8">
+            <h3 class="text-2xl sm:text-3xl font-heading font-black text-white">
+              「福祉・教育AIまなびば」参加パッケージ
+            </h3>
+            <p class="text-slate-300 text-sm mt-2">
+              日々のつまずき解消から最新ツールの習得まで、現場に必要なサポートを網羅しています。
+            </p>
+          </div>
+
+          <!-- パッケージ4大特典グリッド -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm mb-10">
+            <div class="bg-slate-900/90 p-4 rounded-2xl border border-slate-700/80 flex items-start gap-3">
+              <i class="fa-solid fa-check text-brand-orange mt-1"></i>
+              <div>
+                <span class="font-bold block text-white">質問し放題専用LINE</span>
+                <span class="text-xs text-slate-400">日々のつまずきをいつでも即解消</span>
+              </div>
+            </div>
+            <div class="bg-slate-900/90 p-4 rounded-2xl border border-slate-700/80 flex items-start gap-3">
+              <i class="fa-solid fa-check text-brand-mint mt-1"></i>
+              <div>
+                <span class="font-bold block text-white">月1〜2回 実践開発講座</span>
+                <span class="text-xs text-slate-400">希望アプリをその場で実演開発</span>
+              </div>
+            </div>
+            <div class="bg-slate-900/90 p-4 rounded-2xl border border-slate-700/80 flex items-start gap-3">
+              <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+              <div>
+                <span class="font-bold block text-white">講座録画アーカイブ</span>
+                <span class="text-xs text-slate-400">いつでも好きな時間に復習見放題</span>
+              </div>
+            </div>
+            <div class="bg-slate-900/90 p-4 rounded-2xl border border-slate-700/80 flex items-start gap-3">
+              <i class="fa-solid fa-check text-sky-400 mt-1"></i>
+              <div>
+                <span class="font-bold block text-white">現場専用プロンプト集</span>
+                <span class="text-xs text-slate-400">コピペですぐ使える指示文テンプレート</span>
+              </div>
             </div>
           </div>
-          <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-700/80 flex items-start gap-3">
-            <i class="fa-solid fa-check text-brand-teal mt-1"></i>
-            <div>
-              <span class="font-bold block text-white">月1〜2回 実践開発講座</span>
-              <span class="text-xs text-slate-400">希望アプリをその場で実演開発</span>
+
+          <!-- 価格案内エリア（誠実で安心感のある買い切り案内） -->
+          <div class="border-t border-slate-700/80 pt-8 mt-2">
+            <div class="bg-slate-900/90 rounded-2xl p-6 sm:p-8 border border-sky-500/20 text-center max-w-3xl mx-auto">
+              
+              <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-400 text-xs font-bold mb-3">
+                <i class="fa-solid fa-sparkles"></i> 今だけの限定価格
+              </div>
+
+              <div class="mb-4">
+                <span class="text-xs sm:text-sm text-slate-300 font-medium mr-2">コミュニティ参加費用</span>
+                <div class="inline-flex items-baseline gap-1 mt-1">
+                  <span class="text-4xl sm:text-5xl lg:text-6xl font-heading font-black text-white tracking-tight">29,800</span>
+                  <span class="text-base sm:text-lg font-bold text-slate-300">円</span>
+                  <span class="text-xs text-slate-400 font-normal">（税込）</span>
+                </div>
+              </div>
+
+              <!-- 安心の買い切りポリシー説明 -->
+              <div class="bg-sky-950/40 border border-sky-500/30 rounded-xl p-4 sm:p-5 max-w-2xl mx-auto mb-6 text-left">
+                <div class="flex items-center gap-2 text-sky-300 font-bold text-sm mb-2">
+                  <i class="fa-solid fa-shield-check text-base text-brand-mint"></i>
+                  <span>初回1回のみのお支払いです（追加の月額費用などは一切かかりません）</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  「毎月の費用を気にすることなく、ご自身のペースで末永く学び、仲間と繋がり続けてほしい」という想いから、当コミュニティは月額制ではなく<strong>買い切り型</strong>としております。<br class="hidden sm:block">
+                  一度お支払いいただければ、今後もずっとそのまま継続してコミュニティや各種サポートをご利用いただけます。
+                </p>
+              </div>
+
+              <!-- アクションボタン -->
+              <div class="max-w-md mx-auto">
+                <a href="https://forms.gle/E4FqsGxto1968nRM6" target="_blank" rel="noopener noreferrer" class="shimmer inline-flex items-center justify-center gap-3 w-full bg-gradient-to-r from-brand-orange via-orange-600 to-amber-600 hover:from-brand-orange-dark hover:to-orange-700 text-white font-heading font-black text-lg py-4 px-8 rounded-2xl shadow-glow-orange transition duration-300 transform hover:-translate-y-0.5">
+                  <i class="fa-solid fa-door-open"></i>
+                  <span>この価格で参加申込みする</span>
+                </a>
+              </div>
+
             </div>
           </div>
-          <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-700/80 flex items-start gap-3">
-            <i class="fa-solid fa-check text-amber-400 mt-1"></i>
-            <div>
-              <span class="font-bold block text-white">講座録画アーカイブ</span>
-              <span class="text-xs text-slate-400">いつでも好きな時間に復習見放題</span>
-            </div>
-          </div>
-          <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-700/80 flex items-start gap-3">
-            <i class="fa-solid fa-check text-indigo-400 mt-1"></i>
-            <div>
-              <span class="font-bold block text-white">現場専用プロンプト集</span>
-              <span class="text-xs text-slate-400">コピペですぐ使える指示文テンプレート</span>
-            </div>
-          </div>
+
         </div>
       </div>
 
